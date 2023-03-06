@@ -1,0 +1,29 @@
+programa 
+{
+
+
+  funcao inicio() 
+  {
+    inteiro matricula[8], nr_matricula=0
+    cadeia nome_aluno[8], nome,
+    cadeia sobrenome_aluno[8], sobrenome,
+    para(inteiro posicao = 0;posicao < 8 ;posicao++)  
+    {
+      escreva("Digite a matrícula do aluno: ",posicao,"\n")
+      leia(nr_matricula)
+      matricula[posicao] = nr_matricula
+      escreva("\n Digite o nome do aluno: ")
+      leia(nome)
+      nome_aluno[posicao] = nome
+      escreva("\n Digite o sobrenome do aluno: ")
+      leia(sobrenome)
+      sobrenome_aluno[posicao] = sobrenome
+    }
+
+    escreva("Vetor na ordem original: \n","\n")
+    para(inteiro posicao = 0; posicao < 8;posicao++)
+    {
+      escreva(matricula[posicao],"")
+    }
+  }
+}
